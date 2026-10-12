@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Abdul-Rehman</h1>
+    </header>
+    <section id="showLoop">
+        
+    </section>
+
+    <script>
+        var loop = document.getElementById('showLoop');
+        var html = `
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        First Project
+                    </h2>
+                    <a href="https://google.com/" title="Abdul-Rehman" aria-label="Abdul-Rehman">
+                        A
+                    </a>
+                </div>
+                <div class="content ellipsis-text">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="footer">
+                    <p>
+                        Awesomeness starts here...
+                    </p>
+                </div>
+            </div>
+        `;
+        for (var i = 0; i < 12; i++) {
+            loop.innerHTML += html;
+        }
+    </script>
+</body>
+</html>
